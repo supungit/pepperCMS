@@ -3,6 +3,11 @@ backend:
   branch: master
   media_folder: "public/assets/news"
   public_folder: "/assets/news"
+  media_library:
+  name: uploadcare
+  config:
+    publicKey: demopublickey
+
   collections:
     - name: "blog"
       label: "Blog"
