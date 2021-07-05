@@ -1,0 +1,57 @@
+---
+ title: Blog
+ layout: 'base.njk'
+---
+<!-- Slider -->
+<div class="slider-wrapper page-section">
+    <header class="hero-text">
+        <div class="hero" data-arrows="false" data-autoplay="false">
+            <!--.hero-slide-->
+        
+            <div class="hero-slide d-flex flex-column align-items-start justify-content-center m-h-500">
+                <img alt="Mars Image" class="img-responsive cover" src="../assets/slider01.jpg">
+            
+            </div>
+            <!--.hero-slide-->
+        
+        </header>
+</div>
+        
+<section class="position-relative page-section bg-about" id="about">
+    <div class="container pt-5">
+
+        {%- for post in collections.post | reverse -%}
+
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h1 class="text-primary mb-5 text-uppercase">
+                   <a href="{{ post.url }}">{{ post.data.title }}</a>
+                </h1>
+            </div>
+            <div class="col-lg-3 offset-lg-2">
+                    <div class="mb-5">
+                        <img class="img-fluid" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"/>
+                    </div>
+            </div> 
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="lead">
+                            {{ post.data.description }}
+                        </p>
+                        <p class="mb-0">Published on : {{ post.date | postDate }}</p>
+                        <p>Published by : {{ post.data.author }}</p>
+                        <div>
+                            <a href="{{ post.url }}" class="btn btn-sm btn-primary h-auto">Read More</a>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {%- endfor -%}
+
+    </div>
+</section>
+
+       
