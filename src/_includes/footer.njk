@@ -1,0 +1,72 @@
+
+<!-- Footer-->
+<footer class="py-5">
+    <div class="container px-4">
+        <p class="m-0 text-center">Copyright <span class="text-primary"> &copy;</span> Pepper Advertising Group (Private) Limited 2021</p>
+    </div>
+</footer>
+<!-- jQuery lib -->
+<script src="/js/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap core JS-->
+<script src="/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+<script src="/js/468ed22e22.js"></script>
+<script src="/js/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+<script type="text/javascript" src="/js/slick.min.js"></script>
+<script>
+    $(window).on('load', function(){
+    $(".loader").delay(2000).fadeOut("slow");
+    $("#overlayer").delay(2000).fadeOut("slow");
+    })
+</script>
+<script>
+    jQuery(document).ready(function ($) {
+        $('.hero').slick({
+                dots: true,
+                infinite: true,
+                speed: 0,
+                fade: true,
+                cssEase: 'linear',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                draggable: false,
+                arrows: false,
+                
+        });
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    
+        $('#mainNav .navbar-nav a.nav-link').click(function(){
+            $("#mainNav").collapse('hide');
+        });
+    });
+
+</script>
+<script src="/js/lightbox.min.js"></script>
+<script src="/js/contact-script.min.js"></script>

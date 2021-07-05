@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Pepper is a creative agency obsessed with making habits. We turn your brand into a new behavior that people will repeat enough times, so it becomes a habit without having to think." />
+        <meta name="author" content="Pepper is a creative agency obsessed with making habits." />
+        <title>{{ title }}</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+       
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/slick.css" />
+        <link href="/css/lightbox.min.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link href="/css/aos.css" rel="stylesheet" />
+    </head>
+    <body class="darktheme" id="page-top">
+
+        <!-- Preloader -->
+        <div id="overlayer">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="loader d-flex flex-column justify-content-center">
+                    <div class="loader-inner"></div>
+                </div>
+                <img class="mt-150" src="/assets/pepperLogoWhite.png" width="120" />
+            </div>
+        </div>
+
+      {% include "header.njk" %}
+        
+
+      {{ content | safe }}
+
+      {% include "footer.njk" %}
+
+    </body>
+</html>
