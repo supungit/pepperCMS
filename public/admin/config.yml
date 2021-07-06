@@ -3,6 +3,8 @@ backend:
   branch: master
 
   media_folder: public/assets/news
+  media_library:
+    - name: uploads
   public_folder: /assets/news
 
   collections:
